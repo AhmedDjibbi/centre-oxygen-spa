@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Centre Oxygen Spa &amp; Beauté | Monastir, Tunisie</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container-Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config verbatim from Design System -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "background": "#fcf9f3",
+            "tertiary-fixed-dim": "#6cd7d8",
+            "tertiary-container": "#004041",
+            "on-primary-fixed-variant": "#234d4e",
+            "secondary-container": "#b6e9ea",
+            "secondary-fixed-dim": "#9dd0d0",
+            "on-secondary": "#ffffff",
+            "primary-fixed-dim": "#a3cecf",
+            "on-tertiary-fixed-variant": "#004f50",
+            "surface-variant": "#e5e2dc",
+            "surface-tint": "#3c6566",
+            "on-primary-fixed": "#002020",
+            "error": "#ba1a1a",
+            "on-background": "#1c1c18",
+            "tertiary": "#002829",
+            "surface": "#fcf9f3",
+            "surface-container-low": "#f6f3ed",
+            "on-secondary-fixed-variant": "#1a4e4f",
+            "surface-dim": "#dcdad4",
+            "on-error": "#ffffff",
+            "on-primary": "#ffffff",
+            "primary-container": "#123f40",
+            "primary-fixed": "#bfebeb",
+            "surface-container-highest": "#e5e2dc",
+            "on-primary-container": "#80aaab",
+            "inverse-on-surface": "#f3f0ea",
+            "primary": "#002829",
+            "surface-container-lowest": "#ffffff",
+            "on-surface": "#1c1c18",
+            "surface-bright": "#fcf9f3",
+            "inverse-primary": "#a3cecf",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed": "#002020",
+            "on-tertiary-container": "#42b2b3",
+            "on-tertiary": "#ffffff",
+            "outline": "#717978",
+            "on-surface-variant": "#404848",
+            "tertiary-fixed": "#89f4f4",
+            "outline-variant": "#c0c8c8",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#396a6b",
+            "surface-container-high": "#ebe8e2",
+            "inverse-surface": "#31312d",
+            "secondary": "#356667",
+            "secondary-fixed": "#b9ecec",
+            "surface-container": "#f0eee8",
+            "on-tertiary-fixed": "#002020"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-xs": "0.5rem",
+            "space-sm": "0.75rem",
+            "space-lg": "2rem",
+            "margin": "1.25rem",
+            "gutter-desktop": "2.5rem",
+            "space-xl": "3.5rem",
+            "space-md": "1.25rem",
+            "margin-desktop": "5rem",
+            "margin-tablet": "2.5rem",
+            "space-2xl": "5rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "display-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "display": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "display-mobile": ["2.75rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "headline-sm": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "body-md": ["1rem", { "lineHeight": "1.625rem", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "0.01em", "fontWeight": "300" }],
+            "headline-lg": ["3.25rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "headline-md": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "0em", "fontWeight": "500" }],
+            "display": ["4.5rem", { "lineHeight": "5rem", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.1em", "fontWeight": "500" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-editorial-shadow {
+      box-shadow: 0 16px 40px -12px rgba(18, 63, 64, 0.08), 0 2px 8px 0 rgba(18, 63, 64, 0.03);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-container selection:text-primary">
+<!-- 1. HEADER / NAVIGATION FLOTTANTE (Shared Component TopNavBar faithfully mapped) -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-md shadow-[0_16px_40px_-12px_rgba(18,63,64,0.06)] border-b border-primary/10">
+<div class="max-w-[1440px] mx-auto px-space-md lg:px-margin-desktop py-space-sm flex items-center justify-between">
+<!-- Brand Logo Anchor -->
+<a class="flex items-center group py-0.5" href="#">
+  <img src="oxygen-logo-transparent.png" alt="Centre Oxygen Spa &amp; Beauté" class="h-12 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="border-b-2 border-secondary text-primary pb-1 font-semibold tracking-wider font-label-lg text-label-lg" href="#accueil">Accueil</a>
+<a class="text-on-surface-variant hover:text-primary tracking-wider transition-colors duration-200 font-label-lg text-label-lg" href="#experience">L'Expérience</a>
+<a class="text-on-surface-variant hover:text-primary tracking-wider transition-colors duration-200 font-label-lg text-label-lg" href="#soins">Soins &amp; Rituels</a>
+<a class="text-on-surface-variant hover:text-primary tracking-wider transition-colors duration-200 font-label-lg text-label-lg" href="#spa">Le Spa</a>
+<a class="text-on-surface-variant hover:text-primary tracking-wider transition-colors duration-200 font-label-lg text-label-lg" href="#contact">Contact</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center space-x-6">
+<!-- Phone Direct -->
+<a class="hidden xl:flex items-center gap-2 text-primary hover:text-secondary font-label-lg text-label-lg tracking-wider transition-colors duration-200" href="tel:+21631502310">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">call</span>
+<span>+216 31 502 310</span>
+</a>
+<!-- CTA Réserver -->
+<a class="inline-flex items-center justify-center px-6 py-2.5 bg-primary-container text-surface rounded-lg hover:bg-secondary transition-all duration-300 ease-out active:scale-95 font-label-lg text-label-lg shadow-sm" href="#reservation">
+          Réserver
+        </a>
+</div>
+</div>
+</header>
+<main>
+<!-- 2. HERO FULL-SCREEN IMMERSIF -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden" id="accueil">
+<!-- Background Luxury Visual with Subtle Mineral Petrol Overlay -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover object-center filter brightness-[0.82]" data-alt="An expansive Mediterranean luxury spa sanctuary featuring tranquil warm stone balneotherapy pools, arched ivory colonnades, delicate sheer linens floating in saline breezes, gentle turquoise reflections, fragrant potted citrus trees, and architectural ambient lighting that evokes high-end thalassotherapy serenity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy_wPyT35hMcrtv3S1_ffitq3VcfRsBLdkesjFYMNNIZ3DVftdDPla6GXqsWn27W2MG4u_whzjdSh60Tf77bJkPuf-aReClRIfe2c4HQOrJsuyIKluR3iGO_wJsv1s3hUoYLkAowi6_q-HognZAcwmb-IgmMV60BIvwfqLUJSrp96XAPDDJKI-EbRw95aX4IPeu4fRHCaAMadlTrIkWjUfIheCLlE1j5EGot_TtD_gjIbRi8_zoMxMNwIlp9peilMmmowwZgc6HvWl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/95 via-primary-container/50 to-primary-container/30 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-radial from-transparent via-transparent to-primary/40"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 max-w-[1440px] mx-auto px-space-md lg:px-margin-desktop w-full text-center text-surface flex flex-col items-center">
+<!-- Pre-title Pill -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container/20 border border-secondary-fixed-dim/30 backdrop-blur-sm mb-6">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+<span class="font-label-sm text-label-sm text-secondary-fixed tracking-widest uppercase">SANCTUAIRE DE BIEN-ÊTRE • MONASTIR, TUNISIE</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display text-display md:text-[5.25rem] text-surface max-w-4xl mx-auto leading-tight mb-6 font-normal drop-shadow-sm">
+          Votre escale pour souffler.
+        </h1>
+<!-- Poetic Subtitle -->
+<p class="font-body-lg text-body-lg text-surface-container-high max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+          Au cœur de la perle côtière de Monastir, abandonnez la rumeur du monde. Laissez les rituels marins, les vapeurs aromatiques et la douceur minérale vous restituer à vous-même.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-4 mb-16">
+<a class="w-full sm:w-auto px-8 py-4 bg-tertiary-fixed-dim hover:bg-secondary-fixed text-primary font-label-lg text-label-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 tracking-wider text-center" href="#reservation">
+            Réserver un soin
+          </a>
+<a class="w-full sm:w-auto px-8 py-4 border border-surface/40 hover:bg-surface/10 text-surface font-label-lg text-label-lg rounded-lg backdrop-blur-sm transition-all duration-300 tracking-wider text-center" href="#soins">
+            Découvrir nos soins
+          </a>
+</div>
+<!-- Distinction Badges (Sensory indicators) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl w-full border-t border-surface/15 pt-8">
+<div class="flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="font-label-md text-label-md text-surface/90 uppercase tracking-wider">Excellence Sensorielle</span>
+</div>
+<div class="flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-md text-label-md text-surface/90 uppercase tracking-wider">Produits Naturels &amp; Bio</span>
+</div>
+<div class="flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">water_ph</span>
+<span class="font-label-md text-label-md text-surface/90 uppercase tracking-wider">Soins Sur-Mesure</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. INTRODUCTION ÉDITORIALE ASYMÉTRIQUE -->
+<section class="py-space-2xl bg-surface" id="experience">
+<div class="max-w-[1440px] mx-auto px-space-md lg:px-margin-desktop">
+<!-- Editorial Asymmetrical Grid (7 cols / 5 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Image Composition & Tactile Frame (7 columns) -->
+<div class="lg:col-span-7 relative">
+<div class="relative z-10 rounded-lg overflow-hidden border border-primary/10 custom-editorial-shadow bg-surface-container-low aspect-[4/3]">
+<img class="w-full h-full object-cover" data-alt="Editorial close-up of a luxurious coastal spa ritual with organic essential oils in amber bottles, delicate orange blossom blossoms on carved Tunisian sandstone, warm linen towels, and an atmospheric soft golden sunlight illuminating the tranquil textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIAKJkqkfLAm0m87Bnwxe57GUrv86CGScCVaLv-Qcbm1JnHigw-1Vp3FNzMozOOsioxYwLkzJaD58P5KjBcZg8Qf6d_fAV9Ps_Y-e-7hwrLUeDjpsLNuJDKnpV0DftBqyOa7rOEUKe8UMlbwX4e4VA_q9bzjYq6F1sGG45tkTwWK6IYL5fztEo3qDmGAlKqLDG6V8qaD434E27NkHR3tI0T9BxFrYI7ihQkWTTd3_ppNQp-xql3ReKPjfx9n-RsNLriM8X3P5jnD4J"/>
+</div>
+<!-- Offset Tactile Badge Box -->
+<div class="absolute -bottom-8 -right-6 md:right-8 z-20 bg-secondary-container p-6 rounded-lg border border-primary/10 shadow-lg max-w-xs">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold">Monastir • Tunisie</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+                Une signature thermale inspirée par la Méditerranée et les secrets de beauté ancestraux d'Orient.
+              </p>
+</div>
+</div>
+<!-- Editorial Narrative Block (5 columns) -->
+<div class="lg:col-span-5 flex flex-col justify-center mt-12 lg:mt-0">
+<div class="inline-flex items-center gap-2 mb-4">
+<span class="h-px w-8 bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Le Havre d'Oxygène</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6 font-normal leading-tight">
+              Prenez le temps de prendre soin de vous.
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Né de la rencontre entre le savoir-faire balnéologique méditerranéen et la haute cosmétique contemporaine, le Centre Oxygen Spa &amp; Beauté est un sanctuaire préservé à Monastir. Ici, chaque seconde s'étire au rythme des rituels traditionnels : chaleur enveloppante du hammam de marbre, exfoliations douces aux sels marins et frictions aux huiles précieuses de néroli.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+              Nos praticiennes certifiées créent pour chaque hôte une harmonie sur-mesure, combinant gestuelle ancestrale et technologies d'oxygénation cellulaire de pointe.
+            </p>
+<!-- Signature & Distinction -->
+<div class="pt-6 border-t border-primary/10 flex items-center justify-between">
+<div>
+<span class="block font-headline-sm text-headline-sm text-primary italic font-normal">Sonia M. Ben Amor</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Maître Praticienne &amp; Directrice</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">verified</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. RITUELS & SOINS D'EXCEPTION -->
+<section class="py-space-2xl bg-surface-container-low border-t border-primary/10" id="soins">
+<div class="max-w-[1440px] mx-auto px-space-md lg:px-margin-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-3 block">Menu de Bien-Être Intemporel</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-normal leading-tight">
+              Nos soins, votre moment.
+            </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-4 md:mt-0 font-light">
+            Chaque protocole est une invitation au voyage sensoriel, rythmé par des ingrédients purs de la côte tunisienne et des textures soyeuses.
+          </p>
+</div>
+<!-- 3 Bento Ritual Folios -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 01: Soins du corps & massages -->
+<div class="bg-surface rounded-lg border border-primary/10 overflow-hidden flex flex-col justify-between custom-editorial-shadow group hover:border-secondary transition-all duration-300">
+<div>
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxurious full-body massage therapy taking place in a serene sunlit spa room with white marble, warm Mediterranean massage oils being poured with precision, flickering scented candles, and lush tropical greenery in soft focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe9riMJCrWcD8u05TQryrGCz7oETpN25MXKXmfUv5ScWUmSnqAvreRHs4uyo_Tg-JkuurBHzFQkSLXdUzBqBVdwExGnCO1JW7JRs8WIxKV0qXzLuRds4KHZrG-SoiAG9Qv4H2SyeC_CZfrqVf4hdpB12FkVWCPXz6HAZ0WjK9jfy1966_Qe7agoDhkwexmo1xQJRCGbKRgUo9tL4Mr38VRcQPj0L_rX9exBO76Qs0_P5uviCa2EUhsPh4T9t3hdfPq2LYNUR5NXAL3"/>
+<span class="absolute top-4 left-4 bg-primary-container text-surface font-label-sm text-label-sm px-3 py-1 rounded-sm uppercase tracking-widest">01</span>
+<span class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm text-primary font-label-sm text-label-sm px-3 py-1 rounded-sm">60 à 90 min</span>
+</div>
+<div class="p-8">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-2">Massages &amp; Balnéo</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Soins du corps &amp; massages</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+                  Rituels relaxants aux huiles chaudes de jasmin et d'argan, gommages traditionnels au savon noir et sel marin, enveloppements purifiants et drainage revitalisant.
+                </p>
+<!-- Sensory Notes Strip -->
+<div class="py-3 border-y border-primary/5 flex items-center gap-2 text-primary font-label-sm text-label-sm">
+<span class="text-secondary">•</span> Néroli
+                  <span class="text-secondary">•</span> Sel Marin
+                  <span class="text-secondary">•</span> Huile d'Amande
+                </div>
+</div>
+</div>
+<div class="px-8 pb-8 pt-4 flex items-center justify-between border-t border-primary/5 mt-auto">
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase">À partir de</span>
+<span class="font-headline-sm text-headline-sm text-primary font-medium">95 TND</span>
+</div>
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-primary hover:text-secondary transition-colors underline underline-offset-4" href="#reservation">
+                Explorer le rituel
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 02: Soins visage & beauté (Signature dark variant) -->
+<div class="bg-primary-container text-surface rounded-lg border border-primary/20 overflow-hidden flex flex-col justify-between shadow-xl group hover:border-tertiary-fixed transition-all duration-300">
+<div>
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-95" data-alt="Editorial spa facial treatment close up showing radiant skin care with oxygen serum application, gentle jade rollers, soft mineral mist, and pure warm ivory linens in a tranquil wellness sanctuary." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClsX9jevPsWHc4mIg7z3FQz8QMShmmmUBtaredC6Dk0SJPHXtPWSt9tKeBFQnexmZ8yz-HunMJv6QKy9mWZAKjAkJFoRPvM3_kx3dEQDc_fTdYv76-csxZrxkaWD5Cve64pIysiHFoMAskWMBO9IGbxEK04Zq6O8v0TRouiHSvM-m08zG2glwoaZMnqFkbqDoIgBdldvhdKWychb3CvknLc7uSMnuTyg2jsLggJzFXhWzj8baCdav8ZL1K-cplQKROAv_-2HaW5OVt"/>
+<span class="absolute top-4 left-4 bg-tertiary-fixed text-primary font-label-sm text-label-sm px-3 py-1 rounded-sm uppercase tracking-widest font-bold">02 • Signature</span>
+<span class="absolute top-4 right-4 bg-primary/80 backdrop-blur-sm text-surface font-label-sm text-label-sm px-3 py-1 rounded-sm">50 à 75 min</span>
+</div>
+<div class="p-8">
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest block mb-2">Haute Cosmétique</span>
+<h3 class="font-headline-sm text-headline-sm text-surface mb-3">Soins visage &amp; beauté</h3>
+<p class="font-body-sm text-body-sm text-surface-container-highest mb-6 leading-relaxed">
+                  Soins signatures oxygénants pour relancer la vitalité cellulaire, rituels anti-âge lumière d'inspiration méditerranéenne et hydratation profonde à l'acide hyaluronique pur.
+                </p>
+<!-- Sensory Notes Strip -->
+<div class="py-3 border-y border-surface/15 flex items-center gap-2 text-surface font-label-sm text-label-sm">
+<span class="text-tertiary-fixed">•</span> Sérum Marin
+                  <span class="text-tertiary-fixed">•</span> Rose de Damas
+                  <span class="text-tertiary-fixed">•</span> Oxygène Actif
+                </div>
+</div>
+</div>
+<div class="px-8 pb-8 pt-4 flex items-center justify-between border-t border-surface/10 mt-auto">
+<div>
+<span class="block font-label-sm text-label-sm text-tertiary-fixed uppercase">À partir de</span>
+<span class="font-headline-sm text-headline-sm text-surface font-medium">120 TND</span>
+</div>
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-tertiary-fixed hover:text-surface transition-colors underline underline-offset-4" href="#reservation">
+                Explorer le rituel
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 03: Beauté & épilation -->
+<div class="bg-surface rounded-lg border border-primary/10 overflow-hidden flex flex-col justify-between custom-editorial-shadow group hover:border-secondary transition-all duration-300">
+<div>
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Delicate manicure and hand spa treatment setting with pristine natural botanical oils, ivory ceramic bowls of warm herbal infusions, and soft linen towels in a serene high-end beauty salon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpAYqG985RDcmt-HwqVhfle_q06R4Zx4YWT0tlzs5qxB5E_p8qJPaKY5GNkf-3eX0zhguyoxYtc8XcPo_qfcH49uAxYrLI1Jk9IjGaoYh13h1YeS0WIa0EAK7H7wyy5PlRmeF5p-6nv0MBh6Igjzvgi-F3C7TOjDNnogNv9bHJkxpbduSDiLHDNypQssiXo8SWQo2ILmhnjZ2qbNGzX2LNGO1IcUdwPMkePQsBceO8zqzxOxKv-pL11jRebbAIDFaZ4VndGWRjWqdo"/>
+<span class="absolute top-4 left-4 bg-primary-container text-surface font-label-sm text-label-sm px-3 py-1 rounded-sm uppercase tracking-widest">03</span>
+<span class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm text-primary font-label-sm text-label-sm px-3 py-1 rounded-sm">30 à 60 min</span>
+</div>
+<div class="p-8">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-2">Embellissement</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Beauté &amp; épilation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+                  Rituels d'embellissement des mains et des pieds par bains tièdes d'huiles aromatiques, soins regard rehaussants et épilation délicate haute précision à la cire tiède naturelle.
+                </p>
+<!-- Sensory Notes Strip -->
+<div class="py-3 border-y border-primary/5 flex items-center gap-2 text-primary font-label-sm text-label-sm">
+<span class="text-secondary">•</span> Cire au Miel
+                  <span class="text-secondary">•</span> Aloé Vera
+                  <span class="text-secondary">•</span> Karité
+                </div>
+</div>
+</div>
+<div class="px-8 pb-8 pt-4 flex items-center justify-between border-t border-primary/5 mt-auto">
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase">À partir de</span>
+<span class="font-headline-sm text-headline-sm text-primary font-medium">55 TND</span>
+</div>
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-primary hover:text-secondary transition-colors underline underline-offset-4" href="#reservation">
+                Explorer le rituel
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. RESPIRATION VISUELLE IMMERSIVE -->
+<section class="relative py-32 bg-primary-container overflow-hidden text-surface" id="spa">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-25 filter blur-[1px]" data-alt="Serene calm horizon view of the Mediterranean Sea near Monastir Tunisia during a warm sunset with soft turquoise ripples, tranquil sky, and golden reflections evoking deep mindfulness and absolute thermal relaxation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgompUbgBqDRdVC5Oi5ZXb6fO8ObARzFBkISJ_tGcW0SjQJxADi_GTyiljxuB0sPIojraX4kcSKb47NEUFi1msJGp3MH-YiCXAMRaXx2PManKmLfyTLGyM8vMN0nhXwDHBHI1uFMjdBBb1OK6k9NxjDgrNW7gEz8H3T6rSsL2j0pb8LI4orVZFVAl81NEIpYVDsM9-S48PBKyVCXzgzrF6RYCtJ648lP3DtvMWp5uUU0H6qMIMy13KiuFVgt9rb9AfR0TY5GlM-3_-"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container via-primary-container/85 to-primary-container"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto px-space-md text-center">
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+<h2 class="font-display text-headline-lg md:text-[3.75rem] text-surface mb-6 font-normal tracking-tight">
+          Le luxe de ralentir.
+        </h2>
+<blockquote class="font-headline-sm text-headline-sm text-secondary-fixed font-light italic mb-8 max-w-2xl mx-auto leading-relaxed">
+          « Dans le silence parfumé de Monastir, le corps se détend, l'esprit s'allège et chaque respiration redevient une célébration de la vie. »
+        </blockquote>
+<div class="inline-flex items-center gap-4 text-surface-container-high font-label-md text-label-md uppercase tracking-widest">
+<span>Hammam Thermal</span>
+<span>•</span>
+<span>Salons d'Oxygénation</span>
+<span>•</span>
+<span>Tisanerie d'Herbes Méditerranéennes</span>
+</div>
+</div>
+</section>
+<!-- 6. RÉSERVATION & CONTACT (Deep Petrol Background) -->
+<section class="py-space-2xl bg-primary text-surface relative" id="reservation">
+<div class="max-w-[1440px] mx-auto px-space-md lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-stretch">
+<!-- Colonne Gauche: Informations & Conciergerie (5 cols) -->
+<div class="lg:col-span-5 flex flex-col justify-between bg-primary-container/70 p-8 lg:p-12 rounded-lg border border-primary/20 backdrop-blur-sm">
+<div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase tracking-widest block mb-3">Conciergerie Privée</span>
+<h2 class="font-headline-md text-headline-md text-surface mb-6 font-normal">
+                Votre parenthèse commence ici.
+              </h2>
+<p class="font-body-md text-body-md text-surface-container-highest mb-10 font-light leading-relaxed">
+                Notre équipe est à votre entière écoute pour concevoir votre parcours de soins sur-mesure ou organiser votre escapade bien-être privatisée.
+              </p>
+<!-- Phone Highlighted -->
+<div class="mb-10 p-6 rounded-lg bg-surface-container-lowest/5 border border-surface/10">
+<span class="block font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-wider mb-2">Téléphone direct de la conciergerie</span>
+<a class="block font-headline-sm text-headline-sm text-surface hover:text-tertiary-fixed font-medium transition-colors" href="tel:+21631502310">
+                  +216 31 502 310
+                </a>
+<span class="block font-body-sm text-body-sm text-surface-container-highest mt-1">Joignable 7j/7 de 9h00 à 20h00</span>
+</div>
+<!-- Location & Inclusion details -->
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed mt-1">pin_drop</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-surface font-semibold">Localisation exclusive</h4>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Avenue de l'Environnement, proche Marina &amp; Corniche, Monastir 5000, Tunisie.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed mt-1">sentiment_satisfied</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-surface font-semibold">Privilèges inclus à chaque visite</h4>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Accueil personnalisé, dégustation de thé à la menthe fraîche &amp; douceurs orientales, accès au salon de repos minéral.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Security Badge -->
+<div class="pt-8 border-t border-surface/10 mt-8 flex items-center gap-3 text-surface-container-highest font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-sm">verified_user</span>
+<span>Discrétion garantie &amp; protocole sanitaire rigoureux</span>
+</div>
+</div>
+<!-- Colonne Droite: Formulaire de Réservation Prestige (7 cols) -->
+<div class="lg:col-span-7 bg-surface p-8 lg:p-12 rounded-lg border border-primary/10 text-on-surface shadow-2xl flex flex-col justify-between">
+<div>
+<div class="mb-8">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Demande de Réservation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+                  Remplissez ce formulaire et notre maître d'accueil confirmera votre rendez-vous dans l'heure par appel ou WhatsApp.
+                </p>
+</div>
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('Merci pour votre demande. Notre conciergerie vous contacte dans les plus brefs délais.');">
+<!-- Sélection de la prestation -->
+<div>
+<label class="block font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2" for="prestation">
+                    Prestation souhaitée *
+                  </label>
+<select class="w-full bg-surface-container-low border border-primary/20 rounded-lg p-3.5 text-primary font-body-md text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="prestation" required="">
+<option disabled="" selected="" value="">Sélectionnez un soin ou un rituel...</option>
+<option value="corps-signature">Soin du corps &amp; Massage relaxant aux huiles méditerranéennes</option>
+<option value="visage-oxygene">Soin visage Signature Oxygénant &amp; Anti-âge lumière</option>
+<option value="beaute-mains-pieds">Rituel Embellissement mains &amp; pieds complet</option>
+<option value="hammam-gommage">Rituel Hammam thermal &amp; Gommage aux sels marins</option>
+<option value="epilation-soin">Épilation haute précision &amp; Soin adoucissant</option>
+<option value="sur-mesure">Parcours bien-être sur-mesure (Demande spéciale)</option>
+</select>
+</div>
+<!-- Date et Heure -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2" for="date">
+                      Date souhaitée *
+                    </label>
+<input class="w-full bg-surface-container-low border border-primary/20 rounded-lg p-3.5 text-primary font-body-md text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="date" required="" type="date"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2" for="heure">
+                      Créneau préféré *
+                    </label>
+<select class="w-full bg-surface-container-low border border-primary/20 rounded-lg p-3.5 text-primary font-body-md text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="heure" required="">
+<option disabled="" selected="" value="">Choisir une heure...</option>
+<option value="09:30">09h30 - Matinée douce</option>
+<option value="11:30">11h30 - Milieu de journée</option>
+<option value="14:30">14h30 - Après-midi détente</option>
+<option value="16:30">16h30 - Pause thé &amp; soin</option>
+<option value="18:30">18h30 - Soirée ressourçante</option>
+</select>
+</div>
+</div>
+<!-- Nom et Téléphone -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2" for="nom">
+                      Nom complet *
+                    </label>
+<input class="w-full bg-surface-container-low border border-primary/20 rounded-lg p-3.5 text-primary font-body-md text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="nom" placeholder="Ex: Sarah Mansour" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2" for="telephone">
+                      Numéro de téléphone *
+                    </label>
+<input class="w-full bg-surface-container-low border border-primary/20 rounded-lg p-3.5 text-primary font-body-md text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="telephone" placeholder="+216 ..." required="" type="tel"/>
+</div>
+</div>
+<!-- Bouton de Soumission -->
+<div class="pt-4">
+<button class="w-full py-4 px-8 bg-primary-container hover:bg-secondary text-surface font-label-lg text-label-lg rounded-lg transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2" type="submit">
+<span>Confirmer ma demande de réservation</span>
+<span class="material-symbols-outlined text-sm">check_circle</span>
+</button>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center mt-3 font-light">
+                    Confirmation immédiate par téléphone ou WhatsApp • Aucune avance demandée en ligne.
+                  </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 7. FOOTER (Shared Component Footer faithfully mapped) -->
+<footer class="bg-primary-container text-on-primary-container border-t border-primary/20" id="contact">
+<div class="max-w-[1440px] mx-auto py-space-xl px-space-md lg:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop mb-12">
+<!-- Col 1: Brand & Identity (5 cols) -->
+<div class="md:col-span-5">
+  <div class="inline-flex items-center bg-surface/95 px-4 py-2 rounded-xl mb-4 shadow-sm">
+    <img src="oxygen-logo-transparent.png" alt="Centre Oxygen Spa &amp; Beauté" class="h-10 w-auto object-contain" />
+  </div>
+<p class="font-body-sm text-body-sm text-on-primary-container/80 max-w-sm mb-6 leading-relaxed">
+            Sanctuaire balnéologique d'exception dédié à l'harmonie du corps et de l'esprit, bercé par les vertus marines et les huiles nobles de la Méditerranée.
+          </p>
+<div class="flex items-center gap-3 text-surface">
+<a class="flex items-center gap-2 hover:text-tertiary-fixed transition-colors text-label-md font-label-md" href="tel:+21631502310">
+<span class="material-symbols-outlined text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">call</span>
+              +216 31 502 310
+            </a>
+</div>
+</div>
+<!-- Col 2: Navigation rapide (3 cols) -->
+<div class="md:col-span-3">
+<span class="block font-label-sm text-label-sm text-surface uppercase tracking-widest mb-4">Navigation</span>
+<ul class="space-y-2.5 font-label-md text-label-md">
+<li><a class="text-on-primary-container/80 hover:text-surface transition-colors duration-200" href="#accueil">Accueil</a></li>
+<li><a class="text-on-primary-container/80 hover:text-surface transition-colors duration-200" href="#experience">L'Expérience Spa</a></li>
+<li><a class="text-on-primary-container/80 hover:text-surface transition-colors duration-200" href="#soins">Soins &amp; Rituels</a></li>
+<li><a class="text-on-primary-container/80 hover:text-surface transition-colors duration-200" href="#spa">Le Spa &amp; Hammam</a></li>
+<li><a class="text-on-primary-container/80 hover:text-surface transition-colors duration-200" href="#reservation">Tarifs &amp; Forfaits</a></li>
+</ul>
+</div>
+<!-- Col 3: Heures d'ouverture & Privilèges (4 cols) -->
+<div class="md:col-span-4">
+<span class="block font-label-sm text-label-sm text-surface uppercase tracking-widest mb-4">Heures d'accueil</span>
+<div class="space-y-2 text-body-sm font-body-sm text-on-primary-container/90">
+<div class="flex justify-between border-b border-white/10 pb-1.5">
+<span>Lundi - Dimanche</span>
+<span class="font-medium text-surface">09:00 - 20:00</span>
+</div>
+<div class="flex justify-between border-b border-white/10 pb-1.5">
+<span>Hammam Privatisé</span>
+<span class="font-medium text-surface">Sur réservation</span>
+</div>
+<div class="flex justify-between border-b border-white/10 pb-1.5">
+<span>Service Voiturier</span>
+<span class="font-medium text-surface">Disponible</span>
+</div>
+</div>
+<div class="mt-6">
+<span class="font-label-sm text-label-sm text-tertiary-fixed block uppercase tracking-wider mb-1">Bons Cadeaux</span>
+<p class="font-body-sm text-body-sm text-on-primary-container/80">Offrez une escale de douceur à vos proches disponible sur simple appel.</p>
+</div>
+</div>
+</div>
+<!-- Legal & Copyright Bar faithfully conforming to footer requirements -->
+<div class="pt-8 border-t border-primary/20 flex flex-col md:flex-row items-center justify-between text-body-sm font-body-sm gap-4">
+<p class="text-on-primary-container/80">
+          © 2025 Centre Oxygen Spa &amp; Beauté. Tous droits réservés. Monastir, Tunisie.
+        </p>
+<div class="flex flex-wrap items-center gap-6 font-label-md text-label-md">
+<a class="text-on-primary-container/80 hover:text-surface transition-colors duration-200" href="#">Mentions Légales</a>
+<a class="text-on-primary-container/80 hover:text-surface transition-colors duration-200" href="#">Politique de Confidentialité</a>
+<a class="text-on-primary-container/80 hover:text-surface transition-colors duration-200" href="#">Charte Sanitaire</a>
+<a class="text-on-primary-container/80 hover:text-surface transition-colors duration-200" href="#">Espace Privé</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
